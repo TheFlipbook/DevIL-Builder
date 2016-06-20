@@ -1,0 +1,12 @@
+bin
+build
+devil
+external/jasper
+external/libjpeg
+external/libmng
+external/libpng
+external/libtiff
+external/littlecms
+external/openexr
+external/squish
+external/zlib
