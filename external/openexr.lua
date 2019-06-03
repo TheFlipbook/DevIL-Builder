@@ -14,7 +14,7 @@ project "openexr_generator_toFloat"
 	targetname "toFloat"
 	
 	defines { "NDEBUG" }
-	flags { "Optimize" }
+	optimize "On"
 	
 	disablewarnings {
 		"4221", -- No previously undefined symbols
@@ -45,7 +45,7 @@ project "openexr_generator_eLut"
 	targetname "eLut"
 	
 	defines { "NDEBUG" }
-	flags { "Optimize" }
+	optimize "On"
 	
 	disablewarnings {
 		"4221", -- No previously undefined symbols
@@ -73,7 +73,7 @@ project "openexr_generator_dwaLookups"
 	
 	
 	defines { "NDEBUG" }
-	flags { "Optimize" }
+	optimize "On"
 	
 	disablewarnings {
 		"4221", -- No previously undefined symbols
@@ -130,7 +130,7 @@ project "openexr_generator_b44ExpLogTable"
 	targetname "b44ExpLogTable"
 	
 	defines { "NDEBUG" }
-	flags { "Optimize" }
+	optimize "On"
 	
 	disablewarnings {
 		"4221", -- No previously undefined symbols

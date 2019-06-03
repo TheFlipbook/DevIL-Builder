@@ -22,11 +22,11 @@ solution "DevIL-Premake"
 	
     configuration "Debug"
         defines { "DEBUG" }
-        flags { "Symbols" }
+        symbols "On"
 
     configuration "Release"
         defines { "NDEBUG" }
-        flags { "Optimize" }
+        optimize "On"
 		
 	configuration "x32"
 		defines { "_WIN32" } 
