@@ -134,7 +134,8 @@ solution "DevIL-Premake"
         
         files {
             "./devil/DevIL/src-ILU/src/**.h",
-            "./devil/DevIL/src-ILU/src/**.c"
+            "./devil/DevIL/src-ILU/src/**.c",
+            "./devil/DevIL/src-ILU/src/**.cpp",
         }
 		
 		links {
@@ -157,7 +158,8 @@ solution "DevIL-Premake"
         
         files {
             "./devil/DevIL/src-ILUT/src/**.h",
-            "./devil/DevIL/src-ILUT/src/**.c"
+            "./devil/DevIL/src-ILUT/src/**.c",
+            "./devil/DevIL/src-ILUT/src/**.cpp",
         }
 		
 		libdirs {
