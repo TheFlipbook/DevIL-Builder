@@ -186,6 +186,10 @@ project "openexr"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 	
+	filter "configurations:Debug"
+		targetname "openexr-d"
+	filter{}
+
 	disablewarnings {
 		"4018", -- Signed/Unsigned mismatch
 		"4099", -- Forward declear mismatch for class versus struct for Imf::Channel

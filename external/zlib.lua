@@ -10,6 +10,10 @@ project "zlib"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 
+	filter "configurations:Debug"
+		targetname "zlib-d"
+	filter{}
+
 	disablewarnings {
 		"4996", -- POSIX name deprecated
 	}

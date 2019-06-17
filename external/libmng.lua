@@ -10,6 +10,10 @@ project "libmng"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 
+	filter "configurations:Debug"
+		targetname "libmng-d"
+	filter{}
+
 	disablewarnings {
 		"4101", -- Unreferenced local variable
 		"4267", -- loss of data in conversion (int)

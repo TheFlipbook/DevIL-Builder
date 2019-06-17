@@ -10,6 +10,10 @@ project "squish"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 
+	filter "configurations:Debug"
+		targetname "squish-d"
+	filter{}
+
 	includedirs {
 		"./squish/"
 	}

@@ -10,6 +10,10 @@ project "libtiff"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 	
+	filter "configurations:Debug"
+		targetname "libtiff-d"
+	filter{}
+
 	os.copyfile( "./libtiff/libtiff/tif_config.vc.h", "../build/config/tif_config.h" )
 	os.copyfile( "./libtiff/libtiff/tiffconf.vc.h", "../build/config/tiffconf.h" )
 	

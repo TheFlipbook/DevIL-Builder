@@ -10,6 +10,10 @@ project "libpng"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 	
+	filter "configurations:Debug"
+		targetname "libpng-d"
+	filter{}
+
 	disablewarnings {
 		"4996", -- sprintf unsafe
 	} 

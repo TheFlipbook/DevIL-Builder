@@ -10,7 +10,11 @@ project "jasper"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 	targetname "libjasper"
-	
+
+	filter "configurations:Debug"
+		targetname "libjasper-d"
+	filter{}
+
 	defines { "JAS_WIN_MSVC_BUILD" }
 	
 	disablewarnings {

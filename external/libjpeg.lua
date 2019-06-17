@@ -10,6 +10,10 @@ project "libjpeg"
 	location "../build/projects"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 	
+	filter "configurations:Debug"
+		targetname "libjpeg-d"
+	filter{}
+
 	disablewarnings {
 		"4267", -- loss of data in conversion (int)
 		"4996", -- POSIX name deprecated

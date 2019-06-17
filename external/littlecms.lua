@@ -11,6 +11,10 @@ project "littlecms"
 	targetdir "../build/lib/%{cfg.buildcfg}/%{cfg.platform}"
 	targetname "lcms"
 	
+	filter "configurations:Debug"
+		targetname "lcms-d"
+	filter{}
+
 	disablewarnings {
 		"4267", -- loss of data in conversion (int)
 	}
