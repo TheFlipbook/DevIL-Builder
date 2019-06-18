@@ -1,7 +1,7 @@
 
 solution "DevIL-Premake"
     configurations { "Debug", "Release" }
-    platforms { "x32", "x64" }
+    platforms { "x86", "x64" }
     location "./build"
 
 	
@@ -28,7 +28,7 @@ solution "DevIL-Premake"
         defines { "NDEBUG" }
         optimize "On"
 		
-	configuration "x32"
+	configuration "x86"
 		defines { "_WIN32" } 
     
 	configuration "x64"
